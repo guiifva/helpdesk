@@ -14,7 +14,10 @@ namespace Helpdesk.Forms
 {
     public partial class FuncionariosTicket : Form
     {
-        private Inicial frmTelaInicial;
+        public FuncionariosTicket()
+        {
+            InitializeComponent();
+        }
 
 
         private void FuncionariosTicket_Load(object sender, EventArgs e)
@@ -62,6 +65,24 @@ namespace Helpdesk.Forms
         private void Btn_sair_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var ticket = new Ticket();
+                var ticketDAO = new TicketDAO();
+
+                ticket.ticketId = Convert.ToInt32(dgv_TicketsFuncionarios.CurrentRow.Cells[0].Value.ToString());
+
+                ticketDAO.delete(ticket);
+                atualizaTabela();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Selecione um ticket   " + ex.Message);
+            }
         }
     }
 }

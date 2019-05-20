@@ -32,6 +32,7 @@
             this.dgv_TicketsFuncionarios = new System.Windows.Forms.DataGridView();
             this.btn_solucionar = new System.Windows.Forms.Button();
             this.btn_sair = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_TicketsFuncionarios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             // 
             // btn_solucionar
             // 
-            this.btn_solucionar.Location = new System.Drawing.Point(365, 504);
+            this.btn_solucionar.Location = new System.Drawing.Point(251, 504);
             this.btn_solucionar.Name = "btn_solucionar";
             this.btn_solucionar.Size = new System.Drawing.Size(81, 28);
             this.btn_solucionar.TabIndex = 2;
@@ -68,7 +69,7 @@
             // 
             // btn_sair
             // 
-            this.btn_sair.Location = new System.Drawing.Point(506, 504);
+            this.btn_sair.Location = new System.Drawing.Point(569, 504);
             this.btn_sair.Name = "btn_sair";
             this.btn_sair.Size = new System.Drawing.Size(81, 28);
             this.btn_sair.TabIndex = 3;
@@ -76,11 +77,22 @@
             this.btn_sair.UseVisualStyleBackColor = true;
             this.btn_sair.Click += new System.EventHandler(this.Btn_sair_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(408, 504);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 28);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Deletar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // FuncionariosTicket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(958, 562);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_solucionar);
             this.Controls.Add(this.dgv_TicketsFuncionarios);
@@ -100,5 +112,6 @@
         private System.Windows.Forms.DataGridView dgv_TicketsFuncionarios;
         private System.Windows.Forms.Button btn_solucionar;
         private System.Windows.Forms.Button btn_sair;
+        private System.Windows.Forms.Button button1;
     }
 }

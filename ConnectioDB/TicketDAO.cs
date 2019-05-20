@@ -140,8 +140,8 @@ namespace Helpdesk.ConnectioDB
                 AcessoDadosMySQL.LimparParametros();
                 object objRetorno = null; if (ticket != null)
                 {
-                    // AcessoDadosMySQL.AdicionarParametros("@vchProtocolo", ticket.protocolo);
-                    string strSQL = "DELETE FROM tickets WHERE ticketId = @vchTicketId; select @vchTicketId;";
+                    AcessoDadosMySQL.AdicionarParametros("@vchTicketId", ticket.ticketId);
+                    string strSQL = "DELETE FROM ticket WHERE ticketId = @vchTicketId; select @vchTicketId;";
                     objRetorno = AcessoDadosMySQL.ExecutarManipulacao(CommandType.Text, strSQL);
                 }
                 int intResultado = 0;

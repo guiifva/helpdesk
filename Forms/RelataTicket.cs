@@ -45,6 +45,18 @@ namespace Helpdesk.Forms
             txb_Setor.Text = editaTicket.departamento;
             txb_Erro.Text = editaTicket.msgErro;
             txb_Status.Text = editaTicket.status;
+
+            //desativa a edição do usuario
+            txb_Usuario.Enabled = false;
+            txb_Date.Enabled = false;
+            txb_Categoria.Enabled = false;
+            txb_Software.Enabled = false;
+            txb_Setor.Enabled = false;
+            txb_Prioridade.Enabled = false;
+            txb_Erro.Enabled = false;
+            txb_Prazo.Enabled = false;
+            txb_Status.Enabled = false;
+            txb_Descricao.Enabled = false;
         }
 
 
@@ -158,7 +170,8 @@ namespace Helpdesk.Forms
 
             txb_Status.Items.Add("Aberto");
             txb_Status.Items.Add("Em Andamento");
-            txb_Status.Items.Add("Concluido");
+            
+            
 
         }
 

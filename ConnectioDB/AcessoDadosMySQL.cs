@@ -14,7 +14,7 @@ namespace Helpdesk.ConnectioDB
         private static MySqlConnection Conexao;
         private static MySqlConnection CriarConexao()
         {
-            Conexao = new MySqlConnection(@"Server=localhost;Database=helpdesk; uid=root; password=06121998;");
+            Conexao = new MySqlConnection(@"Server=localhost;Database=helpdesk; uid=root; password=root;");
             Conexao.Open(); return Conexao;
         }
         public static void FecharConexao()

@@ -41,6 +41,7 @@ namespace Helpdesk.Forms
             txb_Status.Text = ticketParaSolucao.status;
             txb_Status.Items.Add("Em Andamento");
             txb_Status.Items.Add ("Aberto");
+            txb_Status.Items.Add ("Concluido");
 
         }
 

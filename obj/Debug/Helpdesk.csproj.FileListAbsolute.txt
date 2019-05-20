@@ -30,4 +30,3 @@ D:\Users\PECEGE\Desktop\Helpdesk\obj\Debug\Helpdesk.Forms.Login.resources
 D:\Users\PECEGE\Desktop\Helpdesk\obj\Debug\Helpdesk.Forms.SolucionaTicket.resources
 D:\Users\PECEGE\Desktop\Helpdesk\obj\Debug\Helpdesk.Forms.FuncionariosTicket.resources
 D:\Users\PECEGE\Desktop\Helpdesk\obj\Debug\Helpdesk.Forms.TicketsSolucionados.resources
-D:\Users\PECEGE\Desktop\Helpdesk\obj\Debug\Helpdesk.Forms.RelatoTestes.resources

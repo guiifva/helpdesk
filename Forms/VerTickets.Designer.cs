@@ -64,7 +64,7 @@
             this.btn_editar.Name = "btn_editar";
             this.btn_editar.Size = new System.Drawing.Size(75, 23);
             this.btn_editar.TabIndex = 2;
-            this.btn_editar.Text = "Editar";
+            this.btn_editar.Text = "Ver Mais";
             this.btn_editar.UseVisualStyleBackColor = true;
             this.btn_editar.Click += new System.EventHandler(this.Btn_editar_Click);
             // 
